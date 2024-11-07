@@ -27,7 +27,7 @@ app.use(express.json({ extended: true, limit: '20mb' }));
 
 const io = new Server(server, {
   cors: {
-    origin: process.env.ORIGIN,
+    origin: "*",
     credentials: true,
   },
 });
